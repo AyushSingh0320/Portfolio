@@ -2,6 +2,7 @@
 
 import styles from "../../Style"
 import TiltedCard from "./Animations/Tiltlecard";
+import image from "../assets/IMAGE.jpg"
 
 
 // import {fadeIn, textVariant} from '../utils/motion'
@@ -30,7 +31,7 @@ function About() {
           </div>
           <div className="flex-shrink-0 w-full max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2">
 <TiltedCard className="pb-18"
-  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  imageSrc={image}
   altText="Kendrick Lamar - GNX Album Cover"
   containerHeight="350px"
   containerWidth="350px"
