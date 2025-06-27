@@ -1,7 +1,7 @@
 // import react from 'react';
 const Footer = () => {
   return (
-    <div className="sm:px-36 px-6 -mt-20 pt-4 pb-4 flex flex-col gap-5 justify-between md:flex-row text-secondary bg-gray-200">
+    <div className="sm:px-36 px-6 py-2.5 flex flex-col gap-5 justify-between md:flex-row text-secondary bg-gray-200">
 
       <div className="flex flex-col items-center font-semibold text-[17px]">
         <p>Designed & Developed by</p>

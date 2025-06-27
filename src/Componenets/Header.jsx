@@ -57,14 +57,14 @@ export default function Header() {
                             </li>
                              <li>
                                 <NavLink
-                                to = "/projects"
+                                to = {"/skills"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-shadow-orange-700" : 'text-gray-800'}
+                                        ${isActive ? "text-blue-600 font-bold": 'text-gray-800'}
                                          hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                     }
                                 >
-                                     Projects
+                                    Technical Skills
                                 </NavLink>
                             </li>
                              <li>
@@ -75,8 +75,9 @@ export default function Header() {
                                         ${isActive ? "text-shadow-orange-700 " : 'text-gray-800'}
                                          hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                     }
+                                    
                                 >
-                                    Technical Skills
+                                   Projects 
                                 </NavLink> 
                              </li>
                         </ul>

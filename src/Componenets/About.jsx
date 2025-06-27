@@ -1,6 +1,6 @@
 // import {motion} from 'framer-motion'
 
-import styles from "../../Style"
+import styles from "../Style"
 import TiltedCard from "./Animations/Tiltlecard";
 import image from "../assets/IMAGE.jpg"
 

@@ -1,0 +1,13 @@
+import html from "./html.png";
+import css from "./css.png";
+import javascript from "./javascript.png";
+import reactjs from "./reactjs.png";
+import tailwind from "./tailwind.png";
+import git from "./git.png";
+import github from "./github.svg";
+import nodejs from "./nodejs.svg";
+import MySQL from "./mysql.svg";
+import Redux from "./redux.png";
+import MongoDB from "./mongodb.png";
+import nextjs from  "./nextjs.svg";
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs} ;

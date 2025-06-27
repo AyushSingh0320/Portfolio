@@ -1,4 +1,4 @@
-import styles from "../../Style"
+import styles from "../Style.js"
 import Laptopimg from "../assets/about.png";
 import BlurText from "./Animations/Blurtext.jsx"
 
