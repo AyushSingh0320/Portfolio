@@ -11,11 +11,11 @@ import image from "../assets/IMAGE.jpg"
 
 function About() {
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col dark:bg-gray-900 dark:text-white'>
       <div className='flex-1'>
         <div className='pl-6 md:-mt-10 mt-10 pt-40 pb-24' id='about'>
           <div className='flex flex-col items-start pl-9'>
-            <h2 className={styles.sectionHeadText}>Know Who <span className="text-blue-600"> I'M</span></h2>
+            <h2 className={`${styles.sectionHeadText} dark:text-white`}> Know Who <span className="text-blue-600"> I'M</span></h2>
           </div>
            
 <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-7 pl-9 pr-9 gap-8">

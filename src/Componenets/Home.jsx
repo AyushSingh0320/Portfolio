@@ -11,7 +11,7 @@ const handleAnimationComplete = () => {
 };
 
   return (
-    <section className='relative w-full mx-auto h-screen overflow-y-auto'>
+    <section className='relative w-full mx-auto h-screen overflow-y-auto dark:bg-gray-900 dark:text-white'>
       <div className="absolute inset-0 top-[5px] w-full flex flex-col md:flex-row gap-10 pl-30 pr-0">
         <div className='max-w-lg md:mt-20'>
           <BlurText
@@ -22,12 +22,12 @@ const handleAnimationComplete = () => {
          onAnimationComplete={handleAnimationComplete}
           className = "font-bold text-[#000000] lg:text-[70px] sm:text-[55px] xs:text-[50px] text-[40px] lg:leading-[80px] mt-2 text-black"
 />
-          <p className={`${styles.heroSubText} mt-6 text-secondary text-black`}>
+          <p className={`${styles.heroSubText} mt-6 text-secondary text-black   dark:text-white`}>
             Software engineer based in India, specializing in technical education through hands-on learning and building applications 
           </p>
           
        <button onClick={()=>window.open("/N resume.pdf", "_blank")}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-95">
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-20 transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-95 ">
         Grab a copy of my Resume
       </button>
         

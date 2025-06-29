@@ -49,19 +49,22 @@ const Skills = () => {
   },[])
 
   return (
-    <div className='-mt-10 pt-20' id='Data'>
+    <div className="dark:bg-gray-900 dark:text-white">
+    <div className='-mt-10 pt-20 dark:bg-gray-900 dark:text-white' id='Data'>
 
       <motion.div className='mb-16 ml-90'>
-        <h2 className={styles.sectionHeadText}>My Skills and Technology.</h2>
+        <h2 className={`${styles.sectionHeadText}  dark:text-white`}>My Skills and Technology.</h2>
       </motion.div>
 
-      <div className={`flex flex-row flex-wrap justify-between ml-5 mr-5 ${isMobile ? "gap-3" : "gap-10"}`}>
+      <div className={`flex flex-row flex-wrap justify-between ml-5 mr-5 mb-20 ${isMobile ? "gap-3" : "gap-10"}`}>
         {Data.map((Skill, index) => (
           <SkillItem key={index} technology={Skill} index={index} isMobile={isMobile} />
         ))}
       </div>
 
     </div>
+ </div>
+   
   )
 }
 export default Skills ;

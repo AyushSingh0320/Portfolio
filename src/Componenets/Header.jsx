@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import ThemeBtn from './themebtn';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <header className="shadow sticky z-50">
-            <nav className="bg-gray-200 px-4 lg:px-6 py-2.5">
+        <header className="shadow sticky z-50 dark:bg-gray-900 dark:text-white">
+            <nav className="bg-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-900 dark:text-white">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                     <p className='text-3xl font-bold text-blue-600'>AS.</p>
@@ -35,7 +36,7 @@ export default function Header() {
                                 end
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-blue-600  font-bold " : 'text-gray-800'}
+                                        ${isActive ? "text-blue-600  font-bold dark:text-blue-600 " : 'text-gray-800 dark:text-white'}
                                           hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                          
                                     }
@@ -48,7 +49,7 @@ export default function Header() {
                                 to={"/about"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-blue-600 font-bold" : 'text-gray-800'}
+                                        ${isActive ? "text-blue-600 font-bold  dark:text-blue-600" : 'text-gray-800   dark:text-white'}
                                          hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                     }
                                 >
@@ -60,25 +61,28 @@ export default function Header() {
                                 to = {"/skills"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-blue-600 font-bold": 'text-gray-800'}
-                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
+                                        ${isActive ? "text-blue-600 font-bold  dark:text-blue-600": 'text-gray-800   dark:text-white'}
+                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0  dark:text-white`
                                     }
                                 >
                                     Technical Skills
                                 </NavLink>
                             </li>
-                             <li>
+                             {/* <li>
                                 <NavLink
-                                 to="/skills"
+                                 to=
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-shadow-orange-700 " : 'text-gray-800'}
-                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
+                                        ${isActive ? "text-shadow-orange-700  dark:text-blue-600" : 'text-gray-800   dark:text-white'}
+                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0  dark:text-white `
                                     }
                                     
                                 >
                                    Projects 
                                 </NavLink> 
+                             </li> */}
+                             <li>
+                               <ThemeBtn/>
                              </li>
                         </ul>
                     </div>
