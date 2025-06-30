@@ -49,7 +49,7 @@ export default function Header() {
                                 to={"/about"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-blue-600 font-bold  dark:text-blue-600" : 'text-gray-800   dark:text-white'}
+                                        ${isActive ? "text-blue-600 font-bold  dark:text-blue-600  " : 'text-gray-800   dark:text-white'}
                                          hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                     }
                                 >
@@ -61,8 +61,8 @@ export default function Header() {
                                 to = {"/skills"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
-                                        ${isActive ? "text-blue-600 font-bold  dark:text-blue-600": 'text-gray-800   dark:text-white'}
-                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0  dark:text-white`
+                                        ${isActive ? "text-blue-600 font-bold " : 'text-gray-800   dark:text-white'}
+                                         hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 `
                                     }
                                 >
                                     Technical Skills
