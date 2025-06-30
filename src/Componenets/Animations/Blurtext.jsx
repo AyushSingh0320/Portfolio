@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import Home from '../Home';
+import ThemeBtn from '../themebtn';
 
 const buildKeyframes = (from, steps) => {
   const keys = new Set([
@@ -48,7 +49,7 @@ const BlurText = ({
     observer.observe(ref.current);
     return () => observer.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [threshold, rootMargin ,Home]);
+  }, [threshold, rootMargin ,Home,ThemeBtn]);
 
   const defaultFrom = useMemo(
     () =>
