@@ -68,9 +68,9 @@ export default function Header() {
                                     Technical Skills
                                 </NavLink>
                             </li>
-                             {/* <li>
+                             <li>
                                 <NavLink
-                                 to=
+                                 to=""
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
                                         ${isActive ? "text-shadow-orange-700  dark:text-blue-600" : 'text-gray-800   dark:text-white'}
@@ -80,7 +80,7 @@ export default function Header() {
                                 >
                                    Projects 
                                 </NavLink> 
-                             </li> */}
+                             </li>
                              <li>
                                <ThemeBtn/>
                              </li>
