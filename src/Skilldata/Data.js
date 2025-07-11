@@ -15,23 +15,23 @@ const Data = [
   {
     name: "JavaScript",
     icon: javascript,
-    progress: 80,
+    progress: 85,
   },
   {
     name: "Tailwind-CSS",
     icon: tailwind,
-    progress: 95,
+    progress: 80,
   },
  
   {
     name: "React JS",
     icon: reactjs,
-    progress: 90,
+    progress: 80,
   },
   {
     name: "Node JS",
     icon: nodejs,
-    progress: 90,
+    progress: 60,
   },
   
   {
@@ -42,7 +42,7 @@ const Data = [
   {
     name: "MongoDB",
     icon: MongoDB,
-    progress: 80,
+    progress: 70,
   },
 
   {

@@ -26,10 +26,11 @@ export default function Header() {
                     </button>
 
                     <div
-                        className={`${menuOpen ? 'flex' : 'hidden'} flex-wrap justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
+                        className={`${menuOpen ? 'flex' : 'hidden'} flex-wrap justify-between items-center w-full lg:flex lg:w-auto lg:order-1 pl-4`}
                         id="mobile-menu-2"
                     >
-                        <ul className="flex flex-wrap flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <div className="flex-1"></div>
+                        <ul className="flex flex-wrap flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ml-32 lg:ml-48">
                             <li>
                                 <NavLink
                                 to=""
@@ -70,7 +71,7 @@ export default function Header() {
                             </li>
                              <li>
                                 <NavLink
-                                 to=""
+                                 to={"/projects"}
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
                                         ${isActive ? "text-shadow-orange-700  dark:text-blue-600" : 'text-gray-800   dark:text-white'}
@@ -81,9 +82,10 @@ export default function Header() {
                                    Projects 
                                 </NavLink> 
                              </li>
-                             <li>
-                               <ThemeBtn/>
-                             </li>
+                             <li className="flex items-center">
+  <p className="text-sm mr-2">Toggle Theme</p>
+  <ThemeBtn/>
+</li> 
                         </ul>
                     </div>
                 </div>

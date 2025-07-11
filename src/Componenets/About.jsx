@@ -24,9 +24,8 @@ function About() {
           
            I recently completed  Engineering in <span className="text-blue-600 font-bold" >Computer Science</span>. I'm passionate and fresh web developer who loves turning ideas into interactive and responsive web experiences.Had a great command  in <span className="text-blue-600 font-bold">Javascript</span> and its frameworks and
            libraries like <span className="text-blue-600 font-bold">React</span>  and <span className="text-blue-600 font-bold">Node.js</span> <br/>Currently diving deep into Node.js and Express.js through building projects.  <br/><br/>
-             I&apos;m a quick learner and collaborate closely with clients to
-            create efficient, scalable, and user-friendly solutions that solve
-            real-world problems. Let&apos;s work together to bring your ideas to life!<br/><br/>
+           I’m a quick learner with a strong ability to solve complex problems.
+           I’ve gained valuable team experience by working in many team events and now looking forward to grow in the right direction as a developer.<br/><br/>
                        
           </div>
           <div className="flex-shrink-0 w-full max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2">

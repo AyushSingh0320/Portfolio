@@ -23,7 +23,9 @@ const handleAnimationComplete = () => {
           className = "font-bold text-[#000000] lg:text-[70px] sm:text-[55px] xs:text-[50px] text-[40px] lg:leading-[80px] mt-2 text-black"
 />
           <p className={`${styles.heroSubText} mt-6 text-secondary text-black   dark:text-white`}>
-            Software engineer based in India, specializing in technical education through hands-on learning and building applications 
+          Aspiring Web Developer with a passion for building and learning.
+          On a journey to become a skilled full-stack developer,
+          Currently exploring backend development through building Application.
           </p>
           
        <button onClick={()=>window.open("/N resume.pdf", "_blank")}
