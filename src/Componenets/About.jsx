@@ -32,7 +32,7 @@ function About() {
           <div className="flex-shrink-0 w-full max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2">
 <TiltedCard className="pb-18"
   imageSrc={image}
-  altText="Ayush singh"
+  altText="Kendrick Lamar - GNX Album Cover"
   containerHeight="350px"
   containerWidth="350px"
   imageHeight="350px"
