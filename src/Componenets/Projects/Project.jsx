@@ -37,7 +37,7 @@ Users can upload their designs to a public gallery and manage a personalized das
               imgPath={Blog}
               isBlog={false}
               title="Blog-App"
-              description="This project is a modren blogging platform which allows users to sign up, log in, and securely manage their accounts. Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE."
+              description="This project is a modern blogging platform which allows users to sign up, log in, and securely manage their accounts. Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE."
             techstack = "React , TailwindCSS , Appwrite."
               ghLink="https://github.com/AyushSingh0320/Blog-App"
               demoLink="https://blog-app-p5cj.vercel.app/"
