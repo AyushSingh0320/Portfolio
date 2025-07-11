@@ -28,7 +28,7 @@ const handleAnimationComplete = () => {
           Currently exploring backend development through building Application.
           </p>
           
-       <button onClick={()=>window.open("/N resume.pdf", "_blank")}
+       <button onClick={()=>window.open("/Final Resume (2).pdf", "_blank")}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-20 transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-95 ">
         Grab a copy of my Resume
       </button>

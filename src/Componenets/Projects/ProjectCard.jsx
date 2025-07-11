@@ -23,7 +23,7 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , t
           <h3 className="text-xl font-semibold mb-1 text-foreground dark:text-white">
             {title}
           </h3>
-          <p className="text-muted-foreground dark:text-gray-300 text-justify mb-2 leading-relaxed flex-grow">
+          <p className="text-muted-foreground dark:text-gray-300 text-justify mb-1 leading-relaxed flex-grow">
             {description}
           </p>
           <div className="font-semibold">
@@ -31,7 +31,7 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , t
   </div>
         </div>
       </div>
-      <div className="p-6 pt-0 flex gap-3 mt-auto">
+      <div className="p-6 pt-0 flex gap-3 mt-1">
         <a
           href={ghLink}
           target="_blank"
