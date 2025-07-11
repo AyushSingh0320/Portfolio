@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="gap-5 font-semibold tracking-wide hidden md:flex ">
+      <div className="gap-5 font-semibold tracking-wide flex">
 
         <div className="group flex flex-col justify-center cursor-pointer  hover:text-blue-600">
           <a href="https://github.com/Ayushsingh0320" target="_blank" rel="noreferrer">GITHUB</a>
