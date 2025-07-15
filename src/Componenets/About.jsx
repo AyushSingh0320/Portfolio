@@ -29,10 +29,10 @@ function About() {
     <TiltedCard className="pb-18"
       imageSrc={image}
       altText="Ayush"
-      containerHeight="350px"
-      containerWidth="350px"
-      imageHeight="350px"
-      imageWidth="350px"
+      containerHeight="300px"
+      containerWidth="300px"
+      imageHeight="300px"
+      imageWidth="300px"
       rotateAmplitude={12}
       scaleOnHover={1.2}
       showMobileWarning={false}
