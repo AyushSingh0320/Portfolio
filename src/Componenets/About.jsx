@@ -18,7 +18,7 @@ function About() {
             <h2 className={`${styles.sectionHeadText} dark:text-white`}> Know Who <span className="text-blue-600"> I'M</span></h2>
           </div>
            
-<div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-7 pl-2 md:pl-9 pr-2 md:pr-9 gap-8">
+<div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between mt-7 pl-2 md:pl-5 pr-2 md:pr-9 gap-8">
           <div id = "1"className='mt-7 text-secondary text-[17px] max-w-3xl leading-[30px] pl-2 md:pl-9'>
             <h2 className="text-3xl">Heyy! I am <span className="text-blue-600 font-bold" >Ayush singh</span> from Mumbai , India.<br/></h2><br/>
           
@@ -28,21 +28,22 @@ function About() {
            I’ve gained valuable team experience by working in many team events and now looking forward to grow in the right direction as a developer.<br/><br/>
                        
           </div>
-          <div className="flex-shrink-0 w-full max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2">
-<TiltedCard className="pb-18"
-  imageSrc={image}
-  altText="Kendrick Lamar - GNX Album Cover"
-  containerHeight="350px"
-  containerWidth="350px"
-  imageHeight="350px"
-  imageWidth="350px"
-  rotateAmplitude={12}
-  scaleOnHover={1.2}
-  showMobileWarning={false}
-  showTooltip={true}
-  displayOverlayContent={true}
- 
-/>
+          <div className="w-full flex justify-center">
+  <div className="flex-shrink-0 max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2">
+    <TiltedCard className="pb-18"
+      imageSrc={image}
+      altText="Ayush"
+      containerHeight="350px"
+      containerWidth="350px"
+      imageHeight="350px"
+      imageWidth="350px"
+      rotateAmplitude={12}
+      scaleOnHover={1.2}
+      showMobileWarning={false}
+      showTooltip={true}
+      displayOverlayContent={true}
+    />
+  </div>
 </div>
           </div>
        </div>
