@@ -1,17 +1,16 @@
 import { useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink,} from 'react-router-dom';
 import ThemeBtn from './themebtn';
 import { useScrollSpy } from './useScrollSpy';
 
 const sectionIds = [   'Home' , 'about', 'skills', 'projects'];
 
 export default function Header() {
-    const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
-    const activeIndex = useScrollSpy(sectionIds, 80); // adjust offset for sticky header
+    const activeIndex = useScrollSpy(sectionIds); // adjust offset for sticky header
 
     return (
-        <header className="shadow sticky z-50 dark:bg-gray-900 dark:text-white">
+        <header className="shadow sticky  dark:bg-gray-900 dark:text-white">
             <nav className="bg-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-900 dark:text-white">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <NavLink to="/" className="flex items-center">
@@ -71,11 +70,6 @@ export default function Header() {
                                     >
                                         {id.charAt(0).toUpperCase() + id.slice(1)}
                                     </a>
-                                    {/* <NavLink to={`/${id}`} className={({ isActive }) =>
-                                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-600 lg:p-0 ${
-                                        isActive && location.pathname === `/${id}`  ? "text-blue-600 font-bold" : ""}`
-                                    }></NavLink> */}
-                                  
                                 </li>
                             ))}
                             <li className="flex items-center">
