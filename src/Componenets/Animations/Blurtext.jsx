@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import Home from '../Home';
 import ThemeBtn from '../themebtn';
+import { useTheme } from '../../Contexts/theme';
+
 
 const buildKeyframes = (from, steps) => {
   const keys = new Set([
@@ -34,6 +36,7 @@ const BlurText = ({
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
   const [inView, setInView] = useState(false);
   const ref = useRef(null);
+  const { thememode } = useTheme();
 
   useEffect(() => {
     if (!ref.current) return;
@@ -49,7 +52,14 @@ const BlurText = ({
     observer.observe(ref.current);
     return () => observer.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [threshold, rootMargin ,Home, ]);
+  }, [threshold, rootMargin, Home]);
+
+  // Reset animation when theme changes
+  useEffect(() => {
+    setInView(false);
+    const timeout = setTimeout(() => setInView(true), 10);
+    return () => clearTimeout(timeout);
+  }, [thememode]);
 
   const defaultFrom = useMemo(
     () =>
