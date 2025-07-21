@@ -11,7 +11,7 @@ const handleAnimationComplete = () => {
 };
 
   return (
-    <section className='relative w-full mx-auto h-screen overflow-y-auto dark:bg-gray-900 dark:text-white pt-10'>
+    <section className='relative w-full mx-auto h-screen overflow-y-auto dark:bg-gray-900 dark:text-white pt-15'>
       <div className=" w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-30 pr-0">
         <div className='max-w-lg md:mt-20'>
           <BlurText
