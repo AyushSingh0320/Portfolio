@@ -10,7 +10,7 @@ export default function Header() {
     const activeIndex = useScrollSpy(sectionIds); // adjust offset for sticky header
 
     return (
-        <header className="shadow sticky  dark:bg-gray-900 dark:text-white">
+        <header className=" sticky h-20  dark:bg-gray-900 dark:text-white">
             <nav className="bg-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-900 dark:text-white">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <NavLink to="/" className="flex items-center">
