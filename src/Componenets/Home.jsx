@@ -21,7 +21,7 @@ useEffect(() => {
 
   return (
     
-    <section className='relative w-full mx-auto  min-h-screen  overflow-x-hidden dark:bg-gray-900 dark:text-white sm:pt-16 md:pt-5 md:pl-5 '>
+    <section className='relative w-full mx-auto h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white pt-16 md:pt-5 md:pl-5'>
       <div className="w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-8 pr-0 relative md:ml-10">
         <div className='max-w-lg md:mt-20'>
           <BlurText
