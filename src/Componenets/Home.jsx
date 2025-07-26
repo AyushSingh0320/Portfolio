@@ -1,6 +1,10 @@
 import styles from "../Style.js"
 import Laptopimg from "../assets/about.png";
 import BlurText from "./Animations/Blurtext.jsx"
+import Lanyard from "./Animations/Lanyard";
+import { useEffect } from "react";
+
+
 
 
 
@@ -9,10 +13,16 @@ function Home() {
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
 };
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
+
 
   return (
-    <section className='relative w-full mx-auto h-screen overflow-y-auto dark:bg-gray-900 dark:text-white pt-15'>
-      <div className=" w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-30 pr-0">
+    
+    <section className='relative w-full mx-auto  min-h-screen  overflow-x-hidden dark:bg-gray-900 dark:text-white sm:pt-16 md:pt-5 md:pl-5 '>
+      <div className="w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-8 pr-0 relative md:ml-10">
         <div className='max-w-lg md:mt-20'>
           <BlurText
           text="Heyy there , I'm AYUSH 👋"
@@ -34,16 +44,21 @@ const handleAnimationComplete = () => {
       </button>
         
         </div>
-        <div className="flex justify-end md:justify-end items-center w-full md:w-auto pr-2 pt-30">
-           <img  
-          src={Laptopimg} 
-           alt="laptop" 
-         className="w-full h-auto max-w-md md:max-w-xl md:h-[400px] object-contain mb-25 max-h-[40vh] sm:max-h-none ml-2 md:ml-25"
-           />
-         </div>
+        {/* Lanyard for md+ screens, overlay only on right side */}
+        <div className="absolute top-0 right-0 h-full w-1/2 flex items-center pointer-events-none z-20">
+          <div className="hidden md:flex flex-1 justify-end items-center w-full md:w-auto pr-2 ml-8 z-10 pointer-events-auto mr-30 pt-20">
+            <Lanyard position={[0, 0 , 20]} gravity={[0, -40, 0]} />
+          </div>
+        </div>
+        {/* Laptop image for small screens */}
+        <div className="block md:hidden flex-1 flex justify-end items-center w-full md:w-auto pr-2 pt-8">
+          <img  
+            src={Laptopimg} 
+            alt="laptop" 
+            className="w-full h-auto max-w-md md:max-w-xl md:h-[400px] object-contain mb-8 max-h-[40vh] sm:max-h-none ml-2 md:ml-8"
+          />
+        </div>
       </div>
-      
-    
     </section>
   )
 }
