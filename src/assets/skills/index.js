@@ -10,4 +10,5 @@ import MySQL from "./mysql.svg";
 import Redux from "./redux.png";
 import MongoDB from "./mongodb.png";
 import nextjs from  "./nextjs.svg";
-export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs} ;
+import express from "./express.png";
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express} ;

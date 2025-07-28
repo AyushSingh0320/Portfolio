@@ -49,7 +49,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, scale = 1 }) {
   const [isSmall, setIsSmall] = useState(() =>
     typeof window !== 'undefined' && window.innerWidth < 1024
   );
-  const [rotated, setRotated] = useState(false);
+
 
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]);
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]);

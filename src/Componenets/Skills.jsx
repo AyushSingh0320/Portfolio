@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
-
 import Data from "../Skilldata/Data"
-// import { textVariant } from "../utils/motion"
 import {motion} from "framer-motion";
 import styles from "../Style";
 import ProgressLine from "../progresslines/Progressline";
