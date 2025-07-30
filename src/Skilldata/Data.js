@@ -63,7 +63,7 @@ const Data = [
   {
     name: "Express JS",
     icon: express,
-    progress: 80,
+    progress: 70,
   }
 
 ];
