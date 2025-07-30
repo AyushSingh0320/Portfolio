@@ -1,4 +1,4 @@
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express}  from  "../assets/skills/index"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express}  from  "../assets/skills/index.js"
 
 
 const Data = [
