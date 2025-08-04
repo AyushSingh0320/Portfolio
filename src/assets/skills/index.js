@@ -11,4 +11,5 @@ import Redux from "./redux.png";
 import MongoDB from "./mongodb.png";
 import nextjs from  "./nextjs.svg";
 import express from "./Express.png";
-export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express} ;
+import postman from "./postman.png"
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman} ;
