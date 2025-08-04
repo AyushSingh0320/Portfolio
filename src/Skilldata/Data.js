@@ -1,4 +1,4 @@
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express}  from  "../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman}  from  "../assets/skills/index.js"
 
 
 const Data = [
@@ -64,6 +64,11 @@ const Data = [
     name: "Express JS",
     icon: express,
     progress: 70,
+  },
+  {
+    name: "Postman",
+    icon: postman,
+    progress: 60,
   }
 
 ];
