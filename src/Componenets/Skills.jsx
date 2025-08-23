@@ -10,7 +10,7 @@ const SkillItem = ({ technology, index, isMobile }) => {
   return (
     <div className="flex gap-2" key={index} ref={ref}>
       <img src={technology.icon} label= {technology.name} width={isMobile ? 50 : 61} height={isMobile ? 50 : 61}/>
-      {/* <ProgressLine
+      <ProgressLine
         index={index}
         isVisible={inView}
         isMobile={isMobile}
@@ -21,7 +21,7 @@ const SkillItem = ({ technology, index, isMobile }) => {
             color: "#2b77e7",
           },
         ]}
-      /> */}
+      />
     </div>
   );
 };
