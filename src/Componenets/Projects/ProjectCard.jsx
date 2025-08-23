@@ -26,9 +26,29 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , t
           <p className="text-muted-foreground dark:text-gray-300 text-justify mb-1 leading-relaxed flex-grow">
             {description}
           </p>
-          <div className="font-semibold">
-          Tech Stack: {techstack}
-  </div>
+          {/* Tech Stack Icons */}
+          <div className="flex flex-wrap gap-2 mt-2">
+            {Array.isArray(techstack) ? (
+              techstack.map((tech, index) => (
+                <div key={index} className="flex flex-col items-center group">
+                  <img
+                    src={tech.src || tech}
+                    alt={`tech-${index}`}
+                    className="w-8 h-8 object-contain cursor-pointer"
+                  />
+                  <span className="text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {tech.name}
+                  </span>
+                </div>
+              ))
+            ) : (
+              <img
+                src={techstack}
+                alt="tech-stack"
+                className="w-8 h-8 object-contain"
+              />
+            )}
+          </div>
         </div>
       </div>
       <div className="p-6 pt-0 flex gap-3 mt-1">

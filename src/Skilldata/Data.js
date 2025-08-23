@@ -1,4 +1,4 @@
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman}  from  "../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman , RestApi , AWS , Docker , JWT}  from  "../assets/skills/index.js"
 
 
 const Data = [
@@ -69,7 +69,28 @@ const Data = [
     name: "Postman",
     icon: postman,
     progress: 60,
-  }
+  },
+  {
+    name: "RestAPI", 
+    icon: RestApi,
+    progress: 95,
+  },
+    {
+    name: "JWT", 
+    icon: JWT,
+    progress: 95,
+  },
+    {
+    name: "AWS", 
+    icon: AWS,
+    progress: 95,
+  },
+    {
+    name: "Docker", 
+    icon:  Docker,
+    progress: 95,
+  },
+
 
 ];
 

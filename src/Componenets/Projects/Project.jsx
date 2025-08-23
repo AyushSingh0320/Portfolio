@@ -6,6 +6,8 @@ import Form from "../../assets/Projects/Form.png";
 import Generator from "../../assets/Projects/Generator.png";
 import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
+// import Data from "../Skilldata/Data"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi}  from  "../../assets/skills/index.js"
 
 function Projects() {
   return (
@@ -26,7 +28,14 @@ function Projects() {
               title="Design-it"
               description="A full-stack web application that enables designers to connect, share, and collaborate.
 Users can upload their designs to a public gallery and manage a personalized dashboard by adding a profile picture and bio."
-              techstack = "ReactJS, NodeJS, ExpressJS, MongoDB, JWT for Authentication"
+              techstack={[ {src : reactjs, name : "React"},
+                           {src : nodejs, name : "Node"},
+                           {src : express, name : "Express"},
+                           {src : MongoDB , name : "MongoDB"},
+                           {src :  git , name : "Git"} ,
+                           {src :postman , name : "Postman" },
+                          {src : JWT , name : "JWT" },
+                          {src : RestApi , name : "RestAPI" }  ]}
               
               ghLink="https://github.com/AyushSingh0320/Design-it"
               />
@@ -38,7 +47,12 @@ Users can upload their designs to a public gallery and manage a personalized das
               isBlog={false}
               title="Blog-App"
               description="This project is a modern blogging platform which allows users to sign up, log in, and securely manage their accounts. Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE."
-            techstack = "React , TailwindCSS , Appwrite."
+             techstack={[
+               {src: reactjs, name: "React"},
+               {src: Redux, name: "Redux"},
+               {src: tailwind, name: "Tailwind CSS"},
+               {src: javascript, name: "JavaScript"}
+             ]}  
               ghLink="https://github.com/AyushSingh0320/Blog-App"
               demoLink="https://blog-app-p5cj.vercel.app/"
               />
@@ -51,7 +65,11 @@ Users can upload their designs to a public gallery and manage a personalized das
               title="Notes"
               description="A feature-rich Notes App with functionality for pinning, archiving, and deleting notes.
 Utilized localStorage to persist user data across sessions, ensuring notes remain intact even after page refresh."
-techstack = "HTML , TailwindCSS , Javascript."
+techstack={[
+  {src: html, name: "HTML"},
+  {src: tailwind, name: "Tailwind CSS"},
+  {src: javascript, name: "JavaScript"}
+]}
               ghLink="https://github.com/AyushSingh0320/NOTES-APP"
               demoLink="https://notes-app-g8cs.vercel.app/"              
             />
@@ -64,7 +82,10 @@ techstack = "HTML , TailwindCSS , Javascript."
               title="Converter"
               description="A responsive currency converter that allows users to convert between major global currencies.
 Integrated with a live exchange rate API to fetch up-to-date conversion values"
-techstack = "React , TailwindCSS"
+techstack={[
+  {src: reactjs, name: "React"},
+  {src: tailwind, name: "Tailwind CSS"}
+]}
               ghLink="https://github.com/AyushSingh0320/Currency-converter"
               demoLink="https://currency-converter-five-plum.vercel.app/"
             />
@@ -77,7 +98,10 @@ techstack = "React , TailwindCSS"
               title="Generator"
               description="A password generator that creates strong, random passwords based on user-defined length.
 Includes customizable options to add numbers and special symbols."
-              techstack = "React , TailwindCSS"
+              techstack={[
+                {src: reactjs, name: "React"},
+                {src: tailwind, name: "Tailwind CSS"}
+              ]}
               ghLink="https://github.com/AyushSingh0320/Password-generator"
               demoLink="https://password-generator-eta-ebon-40.vercel.app/"
             />
@@ -89,7 +113,11 @@ Includes customizable options to add numbers and special symbols."
               isBlog={false}
               title="Form"
               description="Basic Registration Form validation using regex."
-              techstack = "HTML , CSS , Javascript"
+              techstack={[
+                {src: html, name: "HTML"},
+                {src: css, name: "CSS"},
+                {src: javascript, name: "JavaScript"}
+              ]}
               ghLink="https://github.com/AyushSingh0320/Form-validation"
               demoLink="https://form-validation-rosy-iota.vercel.app/"
             />

@@ -12,4 +12,8 @@ import MongoDB from "./mongodb.png";
 import nextjs from  "./nextjs.svg";
 import express from "./Express.png";
 import postman from "./postman.png"
-export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman} ;
+import RestApi from "./RestApi.png"
+import  AWS from "./AWS.png"
+import  Docker from "./Docker.png"
+import JWT from "./JWT.png"
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman , RestApi , AWS , Docker , JWT} ;

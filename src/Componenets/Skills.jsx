@@ -8,20 +8,22 @@ import ProgressLine from "../progresslines/Progressline";
 const SkillItem = ({ technology, index, isMobile }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
-    <div className="flex gap-2" key={index} ref={ref}>
-      <img src={technology.icon} label= {technology.name} width={isMobile ? 50 : 61} height={isMobile ? 50 : 61}/>
-      <ProgressLine
-        index={index}
-        isVisible={inView}
-        isMobile={isMobile}
-        label={technology.name}
-        visualParts={[
-          {
-            percentage: technology.progress.toString().concat("%"),
+    <div className="flex gap-4" key={index} ref={ref}>
+      <img src={technology.icon}  width={isMobile ? 50 : 61} height={isMobile ? 50 : 61}/>
+    <div className="mt-4"> {technology.name} </div>
+     
+       {/* <ProgressLine
+         index={index}
+       isVisible={inView}
+      isMobile={isMobile}
+       label={technology.name}
+      visualParts={[
+         {
+        percentage: technology.progress.toString().concat("%"),
             color: "#2b77e7",
           },
         ]}
-      />
+     /> */}
     </div>
   );
 };
@@ -52,7 +54,7 @@ const Skills = () => {
         <h2 className={`${styles.sectionHeadText}  dark:text-white`}>My Skills and Technology.</h2>
       </motion.div>
 
-      <div className={`flex flex-row flex-wrap justify-between ml-2 md:ml-5 mr-2 md:mr-5 mb-10 md:mb-20 ${isMobile ? "gap-3" : "gap-10"}`}>
+      <div className={`grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-8 ml-2 md:ml-5 mr-2 md:mr-5 mb-10 md:mb-20`}>
         {Data.map((Skill, index) => (
           <SkillItem key={index} technology={Skill} index={index} isMobile={isMobile} />
         ))}
