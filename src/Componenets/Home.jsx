@@ -21,8 +21,8 @@ useEffect(() => {
 
   return (
     
-    <section className='relative w-full mx-auto h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white pt-16 md:pt-5 md:pl-5'>
-      <div className="w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-8 pr-0 relative md:ml-10">
+    <section className='relative w-full mx-auto h-screen overflow-hidden dark:bg-gray-900 dark:text-white pt-16 md:pt-5 md:pl-5'>
+      <div className="w-full flex flex-col md:flex-row gap-10 pl-4 md:pl-8 pr-0 relative md:ml-10 h-full">
         <div className='max-w-lg md:mt-20'>
           <BlurText
           text="Heyy there , I'm AYUSH 👋"
@@ -51,11 +51,11 @@ useEffect(() => {
           </div>
         </div>
         {/* Laptop image for small screens */}
-        <div className="block md:hidden flex-1 flex justify-end items-center w-full md:w-auto pr-2 pt-8">
+        <div className="block md:hidden flex-1 flex justify-center items-center w-full pr-2 pt-8 max-h-full overflow-hidden">
           <img  
             src={Laptopimg} 
             alt="laptop" 
-            className="w-full h-auto max-w-md md:max-w-xl md:h-[400px] object-contain mb-8 max-h-[40vh] sm:max-h-none ml-2 md:ml-8"
+            className="w-full h-auto max-w-xs object-contain max-h-[50vh]"
           />
         </div>
       </div>
