@@ -6,6 +6,7 @@ import Form from "../../assets/Projects/Form.png";
 import Generator from "../../assets/Projects/Generator.png";
 import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
+import project from "../../assets/project.png";
 // import Data from "../Skilldata/Data"
 import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi}  from  "../../assets/skills/index.js"
 
@@ -13,9 +14,16 @@ function Projects() {
   return (
     <div className="w-full min-h-screen py-20 dark:bg-gray-900 dark:text-white">
       <div className="container mx-auto px-4 max-w-7xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground dark:text-white">
-          My Recent <span className="text-primary">Works</span>
-        </h1>
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <img
+            className="w-20 h-20"
+            src={project}
+            alt="Projects"
+          />
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-foreground dark:text-white">
+            My Recent <span className="text-primary">Works</span>
+          </h1>
+        </div>
         <p className="text-center text-muted-foreground dark:text-gray-300 text-lg mb-12">
           Here are a few projects I've worked on recently.
         </p>
