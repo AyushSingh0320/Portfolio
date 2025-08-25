@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer"
 import Data from "../Skilldata/Data"
 import {motion} from "framer-motion";
 import styles from "../Style";
-import ProgressLine from "../progresslines/Progressline";
+
 
 const SkillItem = ({ technology, index, isMobile }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -11,19 +11,6 @@ const SkillItem = ({ technology, index, isMobile }) => {
     <div className="flex gap-4" key={index} ref={ref}>
       <img src={technology.icon}  width={isMobile ? 50 : 61} height={isMobile ? 50 : 61}/>
     <div className="mt-4"> {technology.name} </div>
-     
-       {/* <ProgressLine
-         index={index}
-       isVisible={inView}
-      isMobile={isMobile}
-       label={technology.name}
-      visualParts={[
-         {
-        percentage: technology.progress.toString().concat("%"),
-            color: "#2b77e7",
-          },
-        ]}
-     /> */}
     </div>
   );
 };

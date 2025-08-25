@@ -13,7 +13,7 @@ import { useLocation } from "react-router"
 
 function App() {
  const location = useLocation();
-const [ thememode , setThememode] = useState("light")
+const [ thememode , setThememode] = useState("dark")
 
 function lightTheme(){
   setThememode("light")
