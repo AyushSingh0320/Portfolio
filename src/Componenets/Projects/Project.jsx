@@ -8,7 +8,7 @@ import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
 import project from "../../assets/project.png";
 // import Data from "../Skilldata/Data"
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi}  from  "../../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi}  from  "../../assets/skills/index.js"
 
 function Projects() {
   return (
