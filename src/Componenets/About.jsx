@@ -3,6 +3,7 @@
 import styles from "../Style"
 import TiltedCard from "./Animations/Tiltlecard";
 import image from "../assets/IMAGE.jpg"
+import graduation from "../assets/graduation.png";
 
 
 
@@ -16,6 +17,10 @@ function About() {
       <div className='flex-1'>
         <div className='pl-6 md:-mt-10 mt-10 pt-40 pb-24' id='about'>
           <div className='flex flex-col items-start pl-2 md:pl-9'>
+            <img className="w-20 h-20 mb-1"
+            src = {graduation}
+            altText="Ayush"
+            />
             <h2 className={`${styles.sectionHeadText} dark:text-white`}> Know Who <span className="text-blue-600"> I'M</span></h2>
           </div>
            
