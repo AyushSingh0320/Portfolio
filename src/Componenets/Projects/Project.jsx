@@ -8,7 +8,7 @@ import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
 import project from "../../assets/project.png";
 // import Data from "../Skilldata/Data"
-import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean }  from  "../../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean, Appwrite }  from  "../../assets/skills/index.js"
 
 function Projects() {
   return (
@@ -61,7 +61,8 @@ Users can upload their designs to a public gallery and manage a personalized das
                {src: reactjs, name: "React"},
                {src: Redux, name: "Redux"},
                {src: tailwind, name: "Tailwind CSS"},
-               {src: javascript, name: "JavaScript"}
+               {src: javascript, name: "JavaScript"},
+               {src: Appwrite , name: "Appwrite"}
              ]}  
               ghLink="https://github.com/AyushSingh0320/Blog-App"
               demoLink="https://blog-app-p5cj.vercel.app/"
