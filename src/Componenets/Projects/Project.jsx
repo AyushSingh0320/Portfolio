@@ -34,8 +34,7 @@ function Projects() {
               imgPath={Design}
               isBlog={false}
               title="Design-it"
-              description="A full-stack web application that enables designers to connect, share, and collaborate.
-Users can upload their designs to a public gallery and manage a personalized dashboard by adding a profile picture and bio."
+              description="Design-it is a MERN-based social platform for Designers to showcase portfolios, connect, and collaborate. It features real-time interactions, advanced filtering, secure JWT authentication, and media optimization via Cloudinary. Deployed on Digitalocean Droplets with Nginx, PM2, and SSL, the project highlights full-stack development, database optimization, and production-ready DevOps skills."
               techstack={[ {src : reactjs, name : "React"},
                            {src: tailwind, name: "Tailwind CSS"},
                            {src : nodejs, name : "Node"},
@@ -49,6 +48,7 @@ Users can upload their designs to a public gallery and manage a personalized das
                           {src : Digitalocean , name : "Digitalocean"}]}
               
               ghLink="https://github.com/AyushSingh0320/Design-it"
+              demoLink=""
               />
           </div>
 
