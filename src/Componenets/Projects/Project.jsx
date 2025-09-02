@@ -37,6 +37,7 @@ function Projects() {
               description="A full-stack web application that enables designers to connect, share, and collaborate.
 Users can upload their designs to a public gallery and manage a personalized dashboard by adding a profile picture and bio."
               techstack={[ {src : reactjs, name : "React"},
+                           {src: tailwind, name: "Tailwind CSS"},
                            {src : nodejs, name : "Node"},
                            {src : express, name : "Express"},
                            {src : MongoDB , name : "MongoDB"},
