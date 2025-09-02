@@ -48,7 +48,7 @@ function Projects() {
                           {src : Digitalocean , name : "Digitalocean"}]}
               
               ghLink="https://github.com/AyushSingh0320/Design-it"
-              demoLink=""
+              demoLink="https://design-it.live/"
               />
           </div>
 
