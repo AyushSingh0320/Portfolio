@@ -16,4 +16,7 @@ import RestApi from "./RestApi.png"
 import  AWS from "./AWS.png"
 import  Docker from "./Docker.png"
 import JWT from "./JWT.png"
-export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman , RestApi , AWS , Docker , JWT} ;
+import Digitalocean from "./Digitalocean.png"
+import cloudinary from "./cloudinary.jpeg"
+import Appwrite from "./Appwrite1.jpeg"
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman , RestApi , AWS , Docker , JWT , Digitalocean , cloudinary , Appwrite} ;

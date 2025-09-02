@@ -1,4 +1,4 @@
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman , RestApi , AWS , Docker , JWT}  from  "../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman , RestApi , AWS , Docker , JWT, Digitalocean, cloudinary, Appwrite , }  from  "../assets/skills/index.js"
 
 
 const Data = [
@@ -88,6 +88,21 @@ const Data = [
     {
     name: "Docker", 
     icon:  Docker,
+    progress: 95,
+  },
+   {
+    name: "Digitalocean", 
+    icon: Digitalocean,
+    progress: 95,
+  },
+    {
+    name: "Cloudinary", 
+    icon: cloudinary,
+    progress: 95,
+  },
+  {
+    name: "Appwrite", 
+    icon: Appwrite,
     progress: 95,
   },
 

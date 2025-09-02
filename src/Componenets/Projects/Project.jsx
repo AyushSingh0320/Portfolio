@@ -8,7 +8,7 @@ import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
 import project from "../../assets/project.png";
 // import Data from "../Skilldata/Data"
-import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi}  from  "../../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean }  from  "../../assets/skills/index.js"
 
 function Projects() {
   return (
@@ -43,7 +43,9 @@ Users can upload their designs to a public gallery and manage a personalized das
                            {src :  git , name : "Git"} ,
                            {src :postman , name : "Postman" },
                           {src : JWT , name : "JWT" },
-                          {src : RestApi , name : "RestAPI" }  ]}
+                          {src : RestApi , name : "RestAPI" },
+                          {src : cloudinary , name : "Cloudinary"},
+                          {src : Digitalocean , name : "Digitalocean"}]}
               
               ghLink="https://github.com/AyushSingh0320/Design-it"
               />
