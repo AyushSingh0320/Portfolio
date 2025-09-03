@@ -34,7 +34,8 @@ function Projects() {
               imgPath={Design}
               isBlog={false}
               title="Design-it"
-              description="Design-it is a MERN-based social platform for Designers to showcase portfolios, connect, and collaborate. It features real-time interactions, advanced filtering, secure JWT authentication, and media optimization via Cloudinary. Deployed on Digitalocean Droplets with Nginx, PM2, and SSL, the project highlights full-stack development, database optimization, and production-ready DevOps skills."
+              description="Design-it is a MERN-based social platform for Designers to showcase portfolios, connect, and collaborate. It features real-time interactions, advanced filtering, secure JWT authentication, and media optimization via Cloudinary. Deployed on Digitalocean Droplets with Nginx, PM2, and SSL, the project highlights full-stack development, database optimization, and production-ready DevOps skills.
+              Use Email-DemoUser@gmail and Pass-DemoUser123 at the time of login to see all functionalities"
               techstack={[ {src : reactjs, name : "React"},
                            {src: tailwind, name: "Tailwind CSS"},
                            {src : nodejs, name : "Node"},
