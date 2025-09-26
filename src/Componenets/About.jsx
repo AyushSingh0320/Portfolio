@@ -29,7 +29,7 @@ function About() {
 
 
     <h2 className="text-3xl">Heyy! I am <span className="text-blue-600 font-bold">Ayush singh</span> from Mumbai , India.<br/></h2><br/>
-    I recently completed Engineering in <span className="text-blue-600 font-bold">Computer Science</span>. Im passionate and fresh web developer who loves turning ideas into interactive and responsive web experiences.Had a great command in <span className="text-blue-600 font-bold">Javascript</span> and its frameworks and libraries like <span className="text-blue-600 font-bold">React</span> and <span className="text-blue-600 font-bold">Node.js</span> <br/>Currently diving deep into Node.js and Express.js through building projects.  <br/><br/>
+    I recently completed Engineering in <span className="text-blue-600 font-bold">Computer Science</span>. I'm passionate and fresh web developer who loves turning ideas into interactive and responsive web experiences.Had a great command in <span className="text-blue-600 font-bold">Javascript</span> and its frameworks and libraries like <span className="text-blue-600 font-bold">React</span> and <span className="text-blue-600 font-bold">Node.js</span> <br/>Currently diving deep into Node.js and Express.js through building projects.  <br/><br/>
     I’m a quick learner with a strong ability to solve complex problems.
     I’ve gained valuable team experience by working in many team events and now looking forward to grow in the right direction as a developer.<br/><br/>
 
