@@ -23,7 +23,7 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , t
             {description}
           </p>
           {/* Tech Stack Icons */}
-          <div className="flex flex-wrap gap-2 mt-2">
+          <div className="flex flex-wrap  mt-2">
             {Array.isArray(techstack) ? (
               techstack.map((tech, index) => (
                 <div key={index} className="flex flex-col items-center group">

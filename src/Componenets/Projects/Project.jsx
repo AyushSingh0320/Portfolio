@@ -59,7 +59,7 @@ function Projects() {
           imgPath={Backend}
           isBlog={false}
           title="AI-Powered Chat Backend with Subscription System."
-          description=""
+          description="Here live link is a link of Postman collection"
           techstack={[ 
                            {src : nodejs, name : "Node"},
                            {src : express, name : "Express"},
@@ -69,6 +69,7 @@ function Projects() {
                           {src : JWT , name : "JWT" },
                           {src : RestApi , name : "RestAPI" },
                           ]}
+                        ghLink="https://github.com/AyushSingh0320/Gemini-backend-Clone"  
           />
 
           <div className="w-full max-w-sm">
