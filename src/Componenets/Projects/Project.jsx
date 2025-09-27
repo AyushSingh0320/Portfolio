@@ -116,6 +116,7 @@ techstack={[
 
           <div className="w-full max-w-sm">
             <ProjectCard
+            Descriptionpath="/projects"
               imgPath={Generator}
               isBlog={false}
               title="Generator"
@@ -132,6 +133,7 @@ Includes customizable options to add numbers and special symbols."
 
           <div className="w-full max-w-sm">
             <ProjectCard
+            Descriptionpath="/projects"
               imgPath={Form}
               isBlog={false}
               title="Form"
