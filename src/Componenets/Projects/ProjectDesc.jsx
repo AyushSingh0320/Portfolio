@@ -2,6 +2,7 @@ import React , {useEffect} from 'react';
 import Design from "../../assets/Projects/Design.png"
 import Blog from "../../assets/Projects/Blog.png";
 import Notes from "../../assets/Projects/Notes.png";
+import Backend from "../../assets/Projects/Backend.png"
 import { useLocation } from 'react-router-dom';
 
 function ProjectDesc() {
@@ -20,17 +21,17 @@ function ProjectDesc() {
       title: "Design-it",
       description: (
         <>
-          <p>1. Developed a full-stack platform for Designers that serves 20+ RESTful API endpoints with JWT authentication.Implemented the Like/Unlike feature, and a real-time messaging system.</p>
-          <p>2. Built scalable backend architecture with MongoDB database featuring 6 optimized collections, with complex MongoDB aggregation pipelines for like counting, user statistics, and filtering, and integrated Cloudinary API for secure file uploads with automatic image optimization and CDN delivery. Implemented compound indexes (sender-receiver-createdAt, receiver-isRead) for efficient message queries.</p>
-          <p>3. Deployed production application on Digitalocean Droplets using Nginx reverse proxy, PM2 process management for zero-downtime restarts, SSL/TLS encryption, and MongoDB Atlas cloud database.</p>
+          <p> • Developed a full-stack platform for Designers that serves 20+ RESTful API endpoints with JWT authentication.Implemented the Like/Unlike feature, and a real-time messaging system.</p>
+          <p> • Built scalable backend architecture with MongoDB database featuring 6 optimized collections, with complex MongoDB aggregation pipelines for like counting, user statistics, and filtering, and integrated Cloudinary API for secure file uploads with automatic image optimization and CDN delivery. Implemented compound indexes (sender-receiver-createdAt, receiver-isRead) for efficient message queries.</p>
+          <p> • Deployed production application on Digitalocean Droplets using Nginx reverse proxy, PM2 process management for zero-downtime restarts, SSL/TLS encryption, and MongoDB Atlas cloud database.</p>
           <p> 
-            4. Implemented advanced frontend features, including responsive design across all devices, real-time like/unlike functionality with optimistic UI updates,dynamic filtering system with URL synchronization.
+            • Implemented advanced frontend features, including responsive design across all devices, real-time like/unlike functionality with optimistic UI updates,dynamic filtering system with URL synchronization.
           </p>
           <p> 
-            5. Use Email: DemoUser@gmail.com and Password: DemoUser123 at the time of Login to see all functionalities.
+            • Use Email: DemoUser@gmail.com and Password: DemoUser123 at the time of Login to see all functionalities.
           </p>
           <p> 
-            Tech Stack: <br/>
+            • Tech Stack: <br/>
                         <span>Frontend - React.js , TailwindCSS. </span> <br />
                         <span>Backend - Node.js , Express.js , MongoDB , JWT (For Authentication).</span> <br />
                         <span>Cloud - DigitalOcean , MongoDB Atlas cloud database. Cloudinary.</span>
@@ -46,22 +47,22 @@ function ProjectDesc() {
       title: "Blog-App", 
       description: <>
       <p>
-        1.Built a blogging platform that allows users to sign up, log in, and securely manage their accounts.
+        • Built a blogging platform that allows users to sign up, log in, and securely manage their accounts.
       </p>
         <p>
-          2. Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE, supporting images and advanced formatting.
+          • Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE, supporting images and advanced formatting.
         </p>
         <p>
-          3. Used Appwrite as backend for Authentication, database, and file storage services, ensuring data security and scalability.
+          • Used Appwrite as backend for Authentication, database, and file storage services, ensuring data security and scalability.
         </p>
         <p>
-          4. Implemented state management with Redux Toolkit for efficient handling of user sessions and blog data.
+          • Implemented state management with Redux Toolkit for efficient handling of user sessions and blog data.
         </p>
         <p>
-          5. Designed a responsive UI with Tailwind CSS, ensuring optimal user experience across devices.
+          • Designed a responsive UI with Tailwind CSS, ensuring optimal user experience across devices.
         </p>
         <p>
-          Tech Stack: <br/>
+          • Tech Stack: <br/>
           <span>Frontend - React.js , Redux Toolkit , TailwindCSS. </span> <br />
           <span>Backend - Appwrite (For Authentication, Database and Storage).</span> <br />
         </p>
@@ -100,6 +101,7 @@ function ProjectDesc() {
       liveLink: "https://notes-app-g8cs.vercel.app/"
     },
     "Chat-Backend": {
+    imgPath: Backend,
       title: "AI-Powered Chat Backend with Subscription System.",
       description:<>
     <p>
