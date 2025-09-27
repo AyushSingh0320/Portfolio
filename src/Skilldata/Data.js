@@ -1,4 +1,4 @@
-import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman , RestApi , AWS , Docker , JWT, Digitalocean, cloudinary, Appwrite , }  from  "../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux , MongoDB , express , postman , RestApi , AWS , Docker , JWT, Digitalocean, cloudinary, Appwrite , Redis}  from  "../assets/skills/index.js"
 
 
 const Data = [
@@ -103,6 +103,11 @@ const Data = [
   {
     name: "Appwrite", 
     icon: Appwrite,
+    progress: 95,
+  },
+  {
+    name: "Redis", 
+    icon: Redis,
     progress: 95,
   },
 

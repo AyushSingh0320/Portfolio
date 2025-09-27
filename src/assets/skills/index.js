@@ -19,4 +19,5 @@ import JWT from "./JWT.png"
 import Digitalocean from "./Digitalocean.png"
 import cloudinary from "./cloudinary.jpeg"
 import Appwrite from "./Appwrite1.jpeg"
-export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman , RestApi , AWS , Docker , JWT , Digitalocean , cloudinary , Appwrite} ;
+import Redis from "./Redis.png"
+export{html , css ,javascript , reactjs , tailwind , git , github , nodejs , MySQL , Redux ,MongoDB , nextjs , express , postman , RestApi , AWS , Docker , JWT , Digitalocean , cloudinary , Appwrite , Redis} ;

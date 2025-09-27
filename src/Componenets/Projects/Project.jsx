@@ -10,7 +10,7 @@ import Design from "../../assets/Projects/Design.png"
 import project from "../../assets/project.png";
 import Backend from "../../assets/Projects/Backend.png"
 // import Data from "../Skilldata/Data"
-import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean, Appwrite }  from  "../../assets/skills/index.js"
+import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean, Appwrite , Redis}  from  "../../assets/skills/index.js"
 
 function Projects() {
   const Navigate = useNavigate();
@@ -72,6 +72,7 @@ function Projects() {
                            {src :postman , name : "Postman" },
                           {src : JWT , name : "JWT" },
                           {src : RestApi , name : "RestAPI" },
+                          {src : Redis , name : "Redis" },
                           ]}
                         ghLink="https://github.com/AyushSingh0320/Gemini-backend-Clone"  
                         demoLink="https://security-technologist-95598416-4425624.postman.co/workspace/Ayush-Singh's-Workspace~bd694baf-6cb4-4f46-8121-336e952774e3/collection/46997584-b78b1c66-2442-4163-82b3-67f074ce8af1?action=share&creator=46997584"
