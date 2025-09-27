@@ -1,6 +1,7 @@
 import React , {useEffect} from 'react';
 import Design from "../../assets/Projects/Design.png"
 import Blog from "../../assets/Projects/Blog.png";
+import Notes from "../../assets/Projects/Notes.png";
 import { useLocation } from 'react-router-dom';
 
 function ProjectDesc() {
@@ -70,9 +71,31 @@ function ProjectDesc() {
       liveLink: "https://blog-app-p5cj.vercel.app/"
     },
     "Notes": {
+       imgPath: Notes,
       title: "Notes",
-      description: "A feature-rich Notes App with functionality for pinning, archiving, and deleting notes. Utilized localStorage to persist user data across sessions, ensuring notes remain intact even after page refresh.",
-      techStack: ["HTML", "Tailwind CSS", "JavaScript"],
+      description: <>
+      <p>
+        The Notes Application is a feature-rich web app that helps users organize their ideas and tasks efficiently. Built with JavaScript and localStorage, it ensures data persistence directly in the browser.
+      </p>
+        <p> 
+      •	Note Management: Users can create, update, delete notes with ease.
+        </p>
+        <p> 
+      •	Pin & Unpin: Important notes can be pinned to appear at the top.
+        </p>
+        <p> 
+      •	Archive: Notes can be archived to declutter the main view while keeping them     accessible.
+        </p>
+        <p> 
+      •	Delete: Users can permanently remove notes they no longer need.
+        </p>
+          <p> 
+      •LocalStorage Integration: All notes are saved in localStorage, so data persists even   after refreshing the browser.
+        </p>
+         <p> 
+      • Responsive UI: Clean and mobile-friendly design built with HTML, CSS.
+        </p>
+      </>, 
       githubLink: "https://github.com/AyushSingh0320/NOTES-APP",
       liveLink: "https://notes-app-g8cs.vercel.app/"
     },

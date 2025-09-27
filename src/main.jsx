@@ -39,6 +39,10 @@ const router = createBrowserRouter([
         path:"/projectdescBlog-App",
         element: <ProjectDesc/>
       },
+      {
+        path:"/projectdescNotes",
+        element: <ProjectDesc/>
+      }
     ]
   }
 ])

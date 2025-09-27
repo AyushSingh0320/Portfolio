@@ -79,11 +79,14 @@ function Projects() {
 
           <div className="w-full max-w-sm">
             <ProjectCard
+              Descriptionpath="/projectdescNotes"
               imgPath={Notes}
               isBlog={false}
               title="Notes"
-              description="A feature-rich Notes App with functionality for pinning, archiving, and deleting notes.
-Utilized localStorage to persist user data across sessions, ensuring notes remain intact even after page refresh."
+              description=<>
+              <p>A feature-rich Notes Application.</p>
+              For detailed description click on the image 
+              </>
 techstack={[
   {src: html, name: "HTML"},
   {src: tailwind, name: "Tailwind CSS"},
@@ -96,6 +99,7 @@ techstack={[
 
           <div className="w-full max-w-sm">
             <ProjectCard
+              Descriptionpath="/projects"
               imgPath={Converter}
               isBlog={false}
               title="Converter"
