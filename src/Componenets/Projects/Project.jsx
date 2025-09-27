@@ -38,7 +38,7 @@ function Projects() {
               imgPath={Design}
               isBlog={false}
               title="Design-it"
-              description="Click on the image to know more about the project"
+              description="Click on the image to know about the project"
               techstack={[ {src : reactjs, name : "React"},
                            {src: tailwind, name: "Tailwind CSS"},
                            {src : nodejs, name : "Node"},
