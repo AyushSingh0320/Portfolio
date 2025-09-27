@@ -8,6 +8,7 @@ import Generator from "../../assets/Projects/Generator.png";
 import Notes from "../../assets/Projects/Notes.png";
 import Design from "../../assets/Projects/Design.png"
 import project from "../../assets/project.png";
+import Backend from "../../assets/Projects/Backend.png"
 // import Data from "../Skilldata/Data"
 import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean, Appwrite }  from  "../../assets/skills/index.js"
 
@@ -54,6 +55,21 @@ function Projects() {
               demoLink="https://design-it.live/"
               />
           </div>
+          <ProjectCard
+          imgPath={Backend}
+          isBlog={false}
+          title="AI-Powered Chat Backend with Subscription System."
+          description=""
+          techstack={[ 
+                           {src : nodejs, name : "Node"},
+                           {src : express, name : "Express"},
+                           {src : MongoDB , name : "MongoDB"},
+                           {src :  git , name : "Git"} ,
+                           {src :postman , name : "Postman" },
+                          {src : JWT , name : "JWT" },
+                          {src : RestApi , name : "RestAPI" },
+                          ]}
+          />
 
           <div className="w-full max-w-sm">
             <ProjectCard
