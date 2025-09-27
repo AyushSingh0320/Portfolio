@@ -1,4 +1,5 @@
 import React from "react";
+import {  useNavigate } from "react-router";
 import ProjectCard from "./ProjectCard";
 import Blog from "../../assets/Projects/Blog.png";
 import Converter from "../../assets/Projects/Converter.png";
@@ -11,12 +12,13 @@ import project from "../../assets/project.png";
 import {html , css ,javascript , reactjs , tailwind , git ,  nodejs , MySQL , Redux , MongoDB , express , postman, JWT, RestApi, cloudinary, Digitalocean, Appwrite }  from  "../../assets/skills/index.js"
 
 function Projects() {
+  const Navigate = useNavigate();
   return (
     <div className="w-full min-h-screen py-20 dark:bg-gray-900 dark:text-white">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex items-center justify-center gap-4 mb-4">
           <img
-            className="w-20 h-20"
+         className="w-20 h-20"
             src={project}
             alt="Projects"
           />
@@ -31,11 +33,11 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pb-10">
           <div className="w-full max-w-sm">
             <ProjectCard
+              Descriptionpath="/projectdescDesign-it"
               imgPath={Design}
               isBlog={false}
               title="Design-it"
-              description="Design-it is a MERN-based social platform for Designers to showcase portfolios, connect, and collaborate. It features real-time interactions, advanced filtering, secure JWT authentication, and media optimization via Cloudinary. Deployed on Digitalocean Droplets with Nginx, PM2, and SSL, the project highlights full-stack development, database optimization, and production-ready DevOps skills. 
-              Use Email-DemoUser@gmail and Pass-DemoUser123 at the time of login to see all functionalities"
+              description="Click on the image to know more about the project"
               techstack={[ {src : reactjs, name : "React"},
                            {src: tailwind, name: "Tailwind CSS"},
                            {src : nodejs, name : "Node"},
@@ -55,10 +57,14 @@ function Projects() {
 
           <div className="w-full max-w-sm">
             <ProjectCard
+              Descriptionpath="/projectdescBlog-App"
               imgPath={Blog}
               isBlog={false}
               title="Blog-App"
-              description="This project is a modern blogging platform which allows users to sign up, log in, and securely manage their accounts. Authenticated users can create, edit, and delete blog posts using a rich text editor powered by TinyMCE."
+              description=<>
+              <p>A full-stack blog application with features for creating, editing, and managing posts with user authentication.</p> 
+              For detailed description click on the image 
+              </>
              techstack={[
                {src: reactjs, name: "React"},
                {src: Redux, name: "Redux"},

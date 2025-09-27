@@ -1,23 +1,19 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
+import { useNavigate } from "react-router";
 
-// const ProjectCardProps = {
-//   imgPath: "" ,
-//   title: "" ,
-//   description: "" ,
-//   ghLink: "",
-//   demoLink :"" ,
-//   isBlog : false
-// }
 
-function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , techstack}) {
+function ProjectCard({ imgPath, title, description, ghLink, demoLink, isBlog , techstack , Descriptionpath}) {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-card dark:bg-gray-800 rounded-lg shadow-lg overflow-y-auto border border-border dark:border-gray-700 transition-transform hover:scale-105 w-full max-w-sm h-[500px] flex flex-col justify-between">
+    <div className="bg-card dark:bg-gray-800 rounded-lg shadow-lg border border-border dark:border-gray-700 transition-transform hover:scale-105 w-full max-w-sm h-[500px] flex flex-col justify-between">
       <div className="flex-grow flex flex-col">
         <img 
+          onClick={() => navigate(Descriptionpath)}
           src={imgPath} 
           alt="card-img" 
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover cursor-pointer"
         />
         <div className="p-6 flex flex-col flex-grow">
           <h3 className="text-xl font-semibold mb-1 text-foreground dark:text-white">

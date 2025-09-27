@@ -8,6 +8,7 @@ import Home from './Componenets/Home.jsx'
 import About from './Componenets/About.jsx'
 import Skills from './Componenets/Skills.jsx'
 import Projects from './Componenets/Projects/Project.jsx'
+import ProjectDesc from './Componenets/Projects/ProjectDesc.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,15 @@ const router = createBrowserRouter([
       {
         path: "/projects" ,
         element: <Projects/>
-      }
+      }, 
+      {
+        path:"/projectdescDesign-it",
+        element: <ProjectDesc/>
+      },
+      {
+        path:"/projectdescBlog-App",
+        element: <ProjectDesc/>
+      },
     ]
   }
 ])

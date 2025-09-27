@@ -7,6 +7,7 @@ import Home from "./Componenets/Home"
 import About from "./Componenets/About"
 import Skills from "./Componenets/Skills"
 import Projects from "./Componenets/Projects/Project"
+import ProjectDesc from "./Componenets/Projects/ProjectDesc"
 import { useLocation } from "react-router"
 
 
@@ -44,19 +45,25 @@ useEffect(() => {
     }
   }
 }, [location]);
-
+const isProjectDescPage = location.pathname.startsWith('/projectdesc');
   return (
    <Themeprovider  value = {{thememode , lightTheme , darkTheme }}>
     <div className="flex flex-col min-h-screen">
-    <div className="sticky top-0 z-30 bg-white dark:bg-gray-900 pb-4">
+      {!isProjectDescPage && (<div className="sticky top-0 z-30 bg-white dark:bg-gray-900 pb-4">
       <Header/>
       </div>
+    )}
       <div className="flex-1 dark:bg-gray-900">
-    
+      {isProjectDescPage ? (
+        <ProjectDesc />
+      ) : (
+        <>
       <section id="home"><Home /></section>
       <section id="about"><About /></section>
       <section id="skills"><Skills /></section>
       <section id="projects"><Projects /></section>
+      </>
+      )}
     
       </div>
       <Footer/>
