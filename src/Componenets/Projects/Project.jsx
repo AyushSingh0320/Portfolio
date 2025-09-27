@@ -56,6 +56,7 @@ function Projects() {
               />
           </div>
           <ProjectCard
+          Descriptionpath="/projectdescChat-Backend"
           imgPath={Backend}
           isBlog={false}
           title="AI-Powered Chat Backend with Subscription System."

@@ -99,10 +99,12 @@ function ProjectDesc() {
       githubLink: "https://github.com/AyushSingh0320/NOTES-APP",
       liveLink: "https://notes-app-g8cs.vercel.app/"
     },
-    "Currency Converter": {
-      title: "Currency Converter",
-      description: "A responsive currency converter that allows users to convert between major global currencies. Integrated with a live exchange rate API to fetch up-to-date conversion values",
-      techStack: ["React", "Tailwind CSS"],
+    "Chat-Backend": {
+      title: "AI-Powered Chat Backend with Subscription System.",
+      description:<>
+
+      </>,
+      
       githubLink: "https://github.com/AyushSingh0320/Currency-converter",
       liveLink: "https://currency-converter-five-plum.vercel.app/"
     },

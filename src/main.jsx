@@ -42,6 +42,10 @@ const router = createBrowserRouter([
       {
         path:"/projectdescNotes",
         element: <ProjectDesc/>
+      },
+      {
+        path:"/projectdescChat-Backend",
+        element: <ProjectDesc/>
       }
     ]
   }
