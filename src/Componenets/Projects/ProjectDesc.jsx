@@ -3,11 +3,12 @@ import Design from "../../assets/Projects/Design.png"
 import Blog from "../../assets/Projects/Blog.png";
 import Notes from "../../assets/Projects/Notes.png";
 import Backend from "../../assets/Projects/Backend.png"
-import { useLocation } from 'react-router-dom';
+import { useLocation , useNavigate } from 'react-router-dom';
 
 function ProjectDesc() {
   const location = useLocation();
-  
+  const navigate = useNavigate();
+
    useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -137,6 +138,12 @@ function ProjectDesc() {
   return (
     <div className="w-full min-h-screen py-20 dark:bg-gray-900 dark:text-white">
       <div className="container mx-auto px-4 max-w-4xl">
+         {/* <button 
+          onClick={() => navigate('/')}
+          className="mb-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors inline-flex items-center gap-2"
+        >
+          ← Back to Projects
+        </button> */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
               <img   
            src={project.imgPath} 
