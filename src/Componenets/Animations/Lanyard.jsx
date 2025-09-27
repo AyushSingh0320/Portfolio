@@ -2,7 +2,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { Canvas, extend, useFrame } from '@react-three/fiber';
-import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei';
+import { useGLTF, useTexture, Environment, Lightformer, Text } from '@react-three/drei';
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import cardGLB from "../../assets/card1.glb";
@@ -129,10 +129,9 @@ function Band({ maxSpeed = 50, minSpeed = 0, scale = 1 }) {
         <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
-          ref={groupRef}
+            ref={groupRef}
             scale={2.25}
-            position={[0, -1.2, -0.05]
-            }
+            position={[0, -1.2, -0.05]}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
@@ -144,6 +143,29 @@ function Band({ maxSpeed = 50, minSpeed = 0, scale = 1 }) {
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
+            
+            {/* Add "Click Me" text on the front of the card */}
+            <Text
+              position={[0, 0.7, 0.05]}
+              fontSize={0.06}
+              color="#000000"
+              anchorX="center"
+              anchorY="middle"
+            >
+              Click Me
+            </Text>
+            
+            {/* Add "Click Me" text on the back of the card */}
+            <Text
+              position={[0, 0.7, -0.05]}
+              rotation={[0, Math.PI, 0]}
+              fontSize={0.06}
+              color="#000000"
+              anchorX="center"
+              anchorY="middle"
+            >
+              Click Me
+            </Text>
           </group>
         </RigidBody>
       </group>
