@@ -102,26 +102,32 @@ function ProjectDesc() {
     "Chat-Backend": {
       title: "AI-Powered Chat Backend with Subscription System.",
       description:<>
-
+    <p>
+    • Built a backend system with JWT + OTP authentication, chatrooms, and AI-powered messaging using the Gemini API.
+    </p>
+     <p>
+    • Implemented BullMQ queues for asynchronous Gemini requests and Redis caching for OTP, Chatrooms and performance optimization.
+    </p>
+    <p>
+    • Added subscription model with Stripe Sandbox, handling upgrades/downgrades via secure webhooks.
+    </p>
+    <p>
+    • Implemented rate limiting to restrict Basic users to 5 requests/day while Pro users get unlimited access.
+    </p>
+     <p>
+    • Built robust error handling and validation across endpoints, ensuring consistent status codes and secure API interactions.
+    </p>
+    <p>
+    • Delivered a Postman collection with saved responses to simplify testing and demonstrate functionality. The link attached with this project is a link of postman with response body for each and every api.
+    </p>
+     <p>
+    • Tech Stack: Node.js, Express.js, MongoDB, JWT (For Authentication), Redis, Stripe, Gemini API.
+    </p>
       </>,
       
       githubLink: "https://github.com/AyushSingh0320/Currency-converter",
       liveLink: "https://currency-converter-five-plum.vercel.app/"
     },
-    "Password Generator": {
-      title: "Password Generator",
-      description: "A password generator that creates strong, random passwords based on user-defined length. Includes customizable options to add numbers and special symbols.",
-      techStack: ["React", "Tailwind CSS"],
-      githubLink: "https://github.com/AyushSingh0320/Password-generator",
-      liveLink: "https://password-generator-eta-ebon-40.vercel.app/"
-    },
-    "Form Validation": {
-      title: "Form Validation",
-      description: "Basic Registration Form validation using regex.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      githubLink: "https://github.com/AyushSingh0320/Form-validation",
-      liveLink: "https://form-validation-rosy-iota.vercel.app/"
-    }
   };
 
   const project = projectData[projectId];
