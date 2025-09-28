@@ -29,10 +29,12 @@ function About() {
 
 
     <h2 className="text-3xl">Heyy! I am <span className="text-blue-600 font-bold">Ayush singh</span> from Mumbai , India.<br/></h2><br/>
-    I recently completed Engineering in <span className="text-blue-600 font-bold">Computer Science</span>. Im passionate and fresh web developer who loves turning ideas into interactive and responsive web experiences.Had a great command in <span className="text-blue-600 font-bold">Javascript</span> and its frameworks and libraries like <span className="text-blue-600 font-bold">React</span> and <span className="text-blue-600 font-bold">Node.js</span> <br/>Currently diving deep into Node.js and Express.js through building projects.  <br/><br/>
-    I’m a quick learner with a strong ability to solve complex problems.
-    I’ve gained valuable team experience by working in many team events and now looking forward to grow in the right direction as a developer.<br/><br/>
-
+    I recently completed Engineering in <span className="text-blue-600 font-bold">Computer Science</span>. Im passionate and fresh web developer who loves turning ideas into interactive and responsive web experiences.Had a great command on <span className="text-blue-600 font-bold">MERN Stack</span> through building and deploying  <span className="text-blue-600 font-bold">Full Stack Projects, </span> which has helped me understand both the <span className="text-blue-600 font-bold">frontend and backend aspects of development.</span>
+    <br/><br/>
+    Beyond the MERN stack, I continuously explore modern tools and technologies like <span className="text-blue-600 font-bold">Redis, Docker,</span>  and <span className="text-blue-600 font-bold"> AWS</span> to broaden my skills and build scalable, production-ready applications.    <br/><br/>
+    I’m a quick learner with a problem-solving mindset, and I love <span className="text-blue-600 font-bold">stepping out of my comfort zone</span> to take on new challenges that <span className="text-blue-600 font-bold">push me to grow.</span> 
+    My ultimate goal is to evolve into a well-rounded full-stack developer who not only writes clean and efficient code but also <span className="text-blue-600 font-bold"> creates impactful solutions that make a difference.</span>
+    <br/><br/>
   </div>
   <div className="max-w-xs md:max-w-[400px] md:mr-16 md:mb-16 mb-2 mx-auto w-full flex justify-center">
     <TiltedCard className="pb-18"
