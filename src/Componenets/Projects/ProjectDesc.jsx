@@ -129,7 +129,7 @@ function ProjectDesc() {
       </>,
       
       githubLink: "https://github.com/AyushSingh0320/Currency-converter",
-      liveLink: "https://currency-converter-five-plum.vercel.app/"
+      liveLink: "https://security-technologist-95598416-4425624.postman.co/workspace/Ayush-Singh's-Workspace~bd694baf-6cb4-4f46-8121-336e952774e3/collection/46997584-b78b1c66-2442-4163-82b3-67f074ce8af1?action=share&creator=46997584"
     },
   };
 
