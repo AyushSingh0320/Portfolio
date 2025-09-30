@@ -125,7 +125,7 @@ techstack={[
               Descriptionpath="/projects"
               imgPath={Converter}
               isBlog={false}
-              title="Converter"
+              title="Currency Converter"
               description="A responsive currency converter that allows users to convert between major global currencies.
 Integrated with a live exchange rate API to fetch up-to-date conversion values"
 techstack={[
@@ -142,7 +142,7 @@ techstack={[
             Descriptionpath="/projects"
               imgPath={Generator}
               isBlog={false}
-              title="Generator"
+              title="Password Generator"
               description="A password generator that creates strong, random passwords based on user-defined length.
 Includes customizable options to add numbers and special symbols."
               techstack={[
