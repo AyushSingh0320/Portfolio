@@ -10,10 +10,12 @@ import Projects from "./Componenets/Projects/Project"
 import ProjectDesc from "./Componenets/Projects/ProjectDesc"
 import { Analytics } from '@vercel/analytics/react';
 import { useLocation } from "react-router"
+import usePageTracking from "./Tracking"
 
 
 
 function App() {
+usePageTracking();
  const location = useLocation();
 const [ thememode , setThememode] = useState("dark")
 
