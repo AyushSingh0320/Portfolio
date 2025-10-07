@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 
 const usePageTracking = () => {
   const location = useLocation();
-
+ReactGA.initialize("G-LCXRDL1G7F"); 
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: location.pathname });
   }, [location]);
