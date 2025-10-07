@@ -9,7 +9,7 @@ import About from './Componenets/About.jsx'
 import Skills from './Componenets/Skills.jsx'
 import Projects from './Componenets/Projects/Project.jsx'
 import ProjectDesc from './Componenets/Projects/ProjectDesc.jsx'
-
+import ReactGA from "react-ga4";
 const router = createBrowserRouter([
   {
     path : '/',
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
   }
 ])
   
-
+ReactGA.initialize("G-LCXRDL1G7F");
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
