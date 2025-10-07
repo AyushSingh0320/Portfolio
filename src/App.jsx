@@ -8,6 +8,7 @@ import About from "./Componenets/About"
 import Skills from "./Componenets/Skills"
 import Projects from "./Componenets/Projects/Project"
 import ProjectDesc from "./Componenets/Projects/ProjectDesc"
+import { Analytics } from '@vercel/analytics/react';
 import { useLocation } from "react-router"
 
 
@@ -67,6 +68,7 @@ const isProjectDescPage = location.pathname.startsWith('/projectdesc');
     
       </div>
       <Footer/>
+      <Analytics />
     </div>
     </Themeprovider>
   )
