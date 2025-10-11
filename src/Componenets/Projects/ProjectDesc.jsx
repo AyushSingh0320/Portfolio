@@ -23,7 +23,7 @@ function ProjectDesc() {
       description: (
         <>
           <p> • Developed a full-stack platform for Designers that serves 20+ RESTful API endpoints with JWT authentication.Implemented the Like/Unlike feature, and a real-time messaging system.</p>
-          <p> • Built scalable backend architecture with MongoDB database featuring 6 optimized collections, with complex MongoDB aggregation pipelines for like counting, user statistics, and filtering, and integrated Cloudinary API for secure file uploads with automatic image optimization and CDN delivery. Implemented compound indexes (sender-receiver-createdAt, receiver-isRead) for efficient message queries.</p>
+          <p> • Built scalable backend architecture with MongoDB database featuring 6 optimized collections, with complex MongoDB aggregation pipelines for like counting, user statistics, and filtering, and integrated Cloudinary API for secure file uploads with automatic image optimization and CDN delivery. Implemented compound indexes for efficient message queries.</p>
           <p> • Deployed production application on Digitalocean Droplets using Nginx reverse proxy, PM2 process management for zero-downtime restarts, SSL/TLS encryption, and MongoDB Atlas cloud database.</p>
           <p> 
             • Implemented advanced frontend features, including responsive design across all devices, real-time like/unlike functionality with optimistic UI updates,dynamic filtering system with URL synchronization.
